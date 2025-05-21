@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="CSS/normalize.css" />
+  <link rel="stylesheet" href="CSS/styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+
+  <title>Add Employee</title>
+</head>
+<body>
+  <div class="container">
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <button id="menu-toggle"><i class="fas fa-bars"></i></button>
+      <a href="index.html"><div class="sidebartext">Main Menu</div></a>
+      <a href="view.html"><div class="sidebartext">View Employees</div></a>
+      <a href="delete.html"><div class="sidebartext">Delete Employee</div></a>
+      <a href="search-firstname.html"><div class="sidebartext">Search by First Name</div></a>
+      <a href="search-department.html"><div class="sidebartext">Search by Department</div></a>
+      <a href="update-name.html"><div class="sidebartext">Update Name</div></a>
+      <a href="update-salary.html"><div class="sidebartext">Update Salary</div></a>
+      <a href="update-department.html"><div class="sidebartext">Update Department</div></a>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content">
+      <h2>Add Employee</h2>
+      <div class="form-container">
+        <form>
+          <!-- Row 1: First Name + Last Name -->
+          <div class="row">
+            <div class="column">
+              <input type="text" id="fname" placeholder="First Name" required />
+            </div>
+            <div class="column">
+              <input type="text" id="lname" placeholder="Last Name" required />
+            </div>
+          </div>
+
+          <!-- Row 2: Employee ID + Salary -->
+          <div class="row">
+            <div class="column">
+              <input type="number" id="id" placeholder="Employee ID" required />
+            </div>
+            <div class="column">
+              <input type="number" id="salary" placeholder="Salary" required />
+            </div>
+          </div>
+
+          <!-- Row 3: Full-width Department -->
+          <div class="row full-width">
+            <select id="department-select" required>
+              <option value="">Select Department</option>
+              <option value="Engineering">Engineering</option>
+              <option value="Finance">Finance</option>
+              <option value="Sales">Sales</option>
+              <option value="Marketing">Marketing</option>
+            </select>
+          </div>
+
+          <!-- Submit Button -->
+          <div class="row full-width">
+            <button type="submit" class="submit">Add Employee</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+ <!-- JS Scripts -->
+<script type="module" src="JS/main.js"></script>
+<script src="JS/add.js"></script> 
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+
+
+  <!-- Select2 Initialization -->
+  <script>
+    $(document).ready(function () {
+      $('#department-select').select2({
+        placeholder: "Select a department",
+        width: '100%'
+      });
+    });
+  </script>
+</body>
+</html>

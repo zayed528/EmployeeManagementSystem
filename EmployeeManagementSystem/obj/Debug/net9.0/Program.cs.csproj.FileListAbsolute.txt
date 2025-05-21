@@ -1,0 +1,6 @@
+/Users/zayed/Documents/VsCode/EmployeeManagementSystem/EmployeeManagementSystem/obj/Debug/net9.0/Program.cs.csproj.AssemblyReference.cache
+/Users/zayed/Documents/VsCode/EmployeeManagementSystem/EmployeeManagementSystem/obj/Debug/net9.0/Program.cs.GeneratedMSBuildEditorConfig.editorconfig
+/Users/zayed/Documents/VsCode/EmployeeManagementSystem/EmployeeManagementSystem/obj/Debug/net9.0/Program.cs.AssemblyInfoInputs.cache
+/Users/zayed/Documents/VsCode/EmployeeManagementSystem/EmployeeManagementSystem/obj/Debug/net9.0/Program.cs.AssemblyInfo.cs
+/Users/zayed/Documents/VsCode/EmployeeManagementSystem/EmployeeManagementSystem/obj/Debug/net9.0/Program.cs.csproj.CoreCompileInputs.cache
+/Users/zayed/Documents/VsCode/EmployeeManagementSystem/EmployeeManagementSystem/obj/Debug/net9.0/Program.cs.MvcApplicationPartsAssemblyInfo.cache

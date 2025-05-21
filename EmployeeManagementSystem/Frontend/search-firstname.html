@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="CSS/normalize.css" />
+  <link rel="stylesheet" href="CSS/styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <title>Search by First Name</title>
+</head>
+<body>
+  <div class="container">
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <button id="menu-toggle"><i class="fas fa-bars"></i></button>
+      <a href="index.html"><div class="sidebartext">Main Menu</div></a>
+      <a href="view.html"><div class="sidebartext">View All Employees</div></a>
+      <a href="add.html"><div class="sidebartext">Add Employee</div></a>
+      <a href="delete.html"><div class="sidebartext">Delete Employee</div></a>
+      <a href="search-department.html"><div class="sidebartext">Search by Department</div></a>    
+      <a href="update-name.html"><div class="sidebartext"> Update Name</div></a>
+      <a href="update-salary.html"><div class="sidebartext">Update Salary</div></a>
+      <a href="update-department.html"><div class="sidebartext">Update Department</div></a>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content">
+      <h2>Search by First Name</h2>
+      <div class="form-container">
+        <form id="search-form">
+          <div class="row">
+            <div class="column">
+              <input type="text" id="search-name" placeholder="Enter First Name" required />
+            </div>
+          </div>
+          <button type="submit" class="submit">Search</button>
+        </form>
+      </div>
+
+      <div class="form-container" id="results" style="margin-top: 2rem; display: none;">
+        <table id="results-table" border="1" cellpadding="10">
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>First Name</th>
+              <th>Last Name</th>
+              <th>Department</th>
+              <th>Salary</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <!-- JS -->
+  <script type="module" src="JS/main.js"></script>
+  <script src="JS/search-firstname.js"></script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="CSS/normalize.css" />
+  <link rel="stylesheet" href="CSS/styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <title>Delete Employee</title>
+</head>
+<body>
+  <div class="container">
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <button id="menu-toggle"><i class="fas fa-bars"></i></button>
+      <a href="index.html"><div class="sidebartext">Main Menu</div></a>
+      <a href="view.html"><div class="sidebartext">View All Employees</div></a>
+      <a href="add.html"><div class="sidebartext">Add Employee</div></a>
+      <a href="search-firstname.html"><div class="sidebartext">Search by First Name</div></a>
+      <a href="search-department.html"><div class="sidebartext">Search by Department</div></a>    
+      <a href="update-name.html"><div class="sidebartext"> Update Name</div></a>
+      <a href="update-salary.html"><div class="sidebartext"> Update Salary</div></a>
+      <a href="update-department.html"><div class="sidebartext"> Update Department</div></a>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content">
+      <h2>Delete Employee</h2>
+      <div class="form-container">
+        <form id="delete-form">
+          <div class="row">
+            <div class="column">
+              <input type="text" id="delete-id" placeholder="Enter Employee ID to delete" required />
+            </div>
+          </div>
+          <button type="submit" class="submit">Delete</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- JS -->
+  <script type="module" src="JS/main.js"></script>
+  <script src="JS/delete.js"></script>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>View Employees</title>
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="CSS/normalize.css" />
+  <link rel="stylesheet" href="CSS/styles.css" />
+  <link rel="stylesheet" href="https://cdn.datatables.net/1.13.6/css/jquery.dataTables.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+</head>
+<body>
+  <div class="container">
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <button id="menu-toggle"><i class="fas fa-bars"></i></button>
+      <a href="index.html"><div class="sidebartext">Main Menu</div></a>
+      <a href="view.html"><div class="sidebartext">View All Employees</div></a>
+      <a href="add.html"><div class="sidebartext">Add Employee</div></a>
+      <a href="delete.html"><div class="sidebartext">Delete Employee</div></a>
+      <a href="search-firstname.html"><div class="sidebartext">Search by First Name</div></a>
+      <a href="search-department.html"><div class="sidebartext">Search by Department</div></a>    
+      <a href="update-name.html"><div class="sidebartext">Update Name</div></a>
+      <a href="update-salary.html"><div class="sidebartext">Update Salary</div></a>
+      <a href="update-department.html"><div class="sidebartext">Update Department</div></a>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content">
+      <h2>All Employees</h2>
+      <div class="form-container">
+        <table id="employeeTable">
+          <thead>
+            <tr>
+              <th>Employee ID</th>
+              <th>First Name</th>
+              <th>Last Name</th>
+              <th>Department</th>
+              <th>Salary</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- Rows will be inserted via JS -->
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script type="module" src="JS/main.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
+  <script src="JS/view.js"></script>
+</body>
+</html>

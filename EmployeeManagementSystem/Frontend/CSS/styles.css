@@ -1,0 +1,355 @@
+/* Base setup */
+html {
+  font-size: 62.5%; /* 1rem = 10px */
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  background: linear-gradient(90deg, rgba(42, 123, 155, 1) 0%, rgba(0, 0, 0, 1) 23%, rgba(6, 4, 11, 1) 77%, rgba(64, 49, 122, 1) 100%);
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: white;
+}
+
+/* Container layout */
+.container {
+  display: flex;
+  height: 100vh;
+  width: 100%;
+}
+
+/* Sidebar */
+.sidebar {
+  background: rgba(64, 49, 122, 1);
+  width: 20%;
+  min-width: 20rem;
+  height: 100vh;
+  left: -100%;
+  position: absolute;
+  transition: left 0.6s ease;
+  z-index: 10;
+}
+
+.sidebar.open {
+  left: 0;
+}
+
+.sidebartext {
+  color: white;
+  font-size: 1.6rem;
+  margin-top: 3rem;
+  padding: 2rem;
+  text-align: center;
+  transition: background 0.3s ease;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.sidebartext:hover {
+  background-color: #5d47a3;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+/* Sidebar toggle button */
+#menu-toggle {
+  position: fixed;
+  top: 1rem;
+  left: 1rem;
+  z-index: 1100;
+  font-size: 2.4rem;
+  color: white;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.sidebar.open #menu-toggle {
+  position: absolute;
+  top: 1.2rem;
+  left: 30rem;
+}
+
+/* Main content area */
+.main-content {
+  flex-grow: 1;
+  padding: 2rem;
+  color: white;
+}
+
+/* Headings */
+h1, h2 {
+  color: white;
+  font-weight: 600;
+  text-align: center;
+  margin-top: 3rem;
+}
+
+h1 {
+  font-size: 5rem;
+  
+}
+
+h2 {
+  font-size: 4rem;
+
+}
+
+/* Paragraphs */
+p {
+  font-size: 1.6rem;
+  margin: 2rem auto;
+  width: 80%;
+  text-align: justify;
+}
+
+/* Form container */
+.form-container {
+  background-color: #000;
+  padding: 3rem;
+  border-radius: 8px;
+  max-width: 60rem;
+  margin: 0 auto;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.08);
+}
+
+/* Milligram override */
+label {
+  color: white;
+  font-weight: bold;
+  font-size: 1.6rem;
+}
+
+input, select {
+  background-color: #111;
+  color: white;
+  border: 1px solid #666;
+  font-size: 1.6rem;
+  padding: 1rem;
+}
+
+select {
+  background-color: #111 !important;
+}
+
+.row {
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 1.5rem;
+  flex-wrap: wrap;
+  padding: 1rem;
+}
+
+.column {
+  flex: 1;
+  min-width: 20rem;
+  padding: 1rem;
+}
+
+.single-column {
+  flex-direction: column;
+  width: 100%;
+}
+
+.center {
+  justify-content: center;
+}
+
+input,
+select {
+  width: 100%;
+  padding: 1rem;
+  background-color: #111;
+  color: white;
+  border: 1px solid #666;
+  font-size: 1.4rem;
+  border-radius: 4px;
+}
+
+select {
+  background-color: #111 !important;
+}
+
+.submit {
+  background-color: #a05ee9;
+  color: white;
+  font-size: 1.4rem;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  text-transform: uppercase;
+  text-align: center;
+  margin-left: 24rem;
+}
+
+.submit:hover {
+  background-color: #8644d6;
+}
+
+
+.full-width {
+  width: 100%;
+  flex: 1 0 100%;
+}
+
+p{
+  font-size: 2.4rem;
+  margin-top: 10rem;
+}
+
+/* Select2 dropdown background and text */
+.select2-container--default .select2-results>.select2-results__options {
+  background-color: #111;
+  color: white;
+  font-size: 1.4rem;
+}
+
+/* Highlighted option on hover */
+.select2-container--default .select2-results__option--highlighted[aria-selected] {
+  background-color: #5d47a3;
+  color: white;
+}
+
+/* Selected item in box */
+.select2-container--default .select2-selection--single {
+  background-color: #111;
+  border: 1px solid #666;
+  color: white;
+  height: 3.6rem;
+  font-size: 1.4rem;
+}
+
+/* Text inside selection */
+.select2-selection__rendered {
+  color: white;
+  padding-left: 1rem;
+}
+
+/* Arrow icon inside select */
+.select2-container--default .select2-selection--single .select2-selection__arrow {
+  height: 3.6rem;
+  right: 1rem;
+}
+
+
+/* Fix dropdown + search box alignment */
+.dataTables_length label,
+.dataTables_filter label {
+  color: white;
+  font-size: 1.4rem;
+}
+
+.dataTables_length select,
+.dataTables_filter input {
+  background-color: #222;
+  color: white;
+  border: 1px solid #555;
+  padding: 0.3rem 0.6rem;
+  border-radius: 4px;
+}
+
+/* Table custom background */
+#employeeTable_wrapper {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+}
+
+/* Table headers and cells */
+#employeeTable {
+  color: white;
+  background-color: #111;
+}
+
+#employeeTable thead {
+  background-color: #333;
+}
+
+#employeeTable th,
+#employeeTable td {
+  border-color: #444;
+  padding: 1rem;
+}
+
+/* Pagination and info text */
+.dataTables_info,
+.dataTables_paginate {
+  color: white;
+}
+
+/* Highlight hover row */
+#employeeTable tbody tr:hover {
+  background-color: #1a1a1a;
+}
+
+/* Wider select box */
+#department-select {
+  width: 300px;  /* or 100% inside a container */
+  padding: 0.5rem;
+  font-size: 1rem;
+}
+
+/* Wider submit button */
+.submit {
+  width: 150px;
+  padding: 0.6rem;
+  font-size: 1rem;
+  background: #a259ff;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  margin-top: 1rem;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.form-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+#department-select {
+  width: 80%;
+  max-width: 400px;
+  padding: 0.5rem;
+  font-size: 1rem;
+}
+
+.submit {
+  margin-top: 1rem;
+  width: 150px;
+  padding: 0.6rem;
+  font-size: 1rem;
+  background: #a259ff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#results-table {
+  margin: 2rem auto 0 auto;
+  width: 100%;
+  max-width: 800px;
+  border-collapse: collapse;
+  background-color: #111;
+  color: white;
+}
+
+#results-table th,
+#results-table td {
+  padding: 12px;
+  border: 1px solid #555;
+  text-align: center;
+}
+
+

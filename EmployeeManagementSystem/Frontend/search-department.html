@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="CSS/normalize.css" />
+  <link rel="stylesheet" href="CSS/styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+<<<<<<< HEAD:EmployeeManagementSystem/Frontend/search-department.html
+=======
+  <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+>>>>>>> Update search:Frontend/search-department.html
+  <title>Search by Department</title>
+</head>
+<body>
+  <div class="container">
+    
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <button id="menu-toggle"><i class="fas fa-bars"></i></button>
+      <a href="index.html"><div class="sidebartext">Main Menu</div></a>
+      <a href="view.html"><div class="sidebartext">View All Employees</div></a>
+      <a href="add.html"><div class="sidebartext">Add Employee</div></a>
+      <a href="delete.html"><div class="sidebartext">Delete Employee</div></a>
+      <a href="search-firstname.html"><div class="sidebartext">Search by First Name</div></a>
+      <a href="update-name.html"><div class="sidebartext">Update Name</div></a>
+      <a href="update-salary.html"><div class="sidebartext">Update Salary</div></a>
+      <a href="update-department.html"><div class="sidebartext">Update Department</div></a>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content" style="margin-left: 7rem; background-color: rgba(0,0,0,0);">
+      <div class="form-container">
+        <form id="search-form">
+          <div class="row full-width">
+            <select id="department-select" required style="font-size: 2rem; background-color: rgba(0,0,0,0);">
+              <option value="">Select Department</option>
+              <option value="Engineering">Engineering</option>
+              <option value="Finance">Finance</option>
+              <option value="Sales">Sales</option>
+              <option value="Marketing">Marketing</option>
+            </select>
+          </div>
+          <button type="submit" class="submit" style="margin-left: 10rem;">Search</button>
+        </form>
+
+<<<<<<< HEAD:EmployeeManagementSystem/Frontend/search-department.html
+      <div class="form-container" id="results" style="margin-top: 2rem; display: none;">
+        <table id="results-table" border="1" cellpadding="10">
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>First Name</th>
+              <th>Last Name</th>
+              <th>Department</th>
+              <th>Salary</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+=======
+        <div id="results" style="display: none;">
+          <table id="results-table">
+            <thead>
+              <tr>
+                <th>ID</th>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Department</th>
+                <th>Salary</th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+        </div>
+>>>>>>> Update search:Frontend/search-department.html
+      </div>
+    </div>
+  </div>
+
+  <!-- JS -->
+  <script type="module" src="JS/main.js"></script>
+  <script src="JS/search-department.js"></script>
+</body>
+</html>
