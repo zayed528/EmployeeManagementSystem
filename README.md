@@ -1,6 +1,6 @@
 
 # Employee Management System
-A full-stack web application built with .NET Core (C#) for the backend and HTML/CSS/JavaScript for the frontend. It uses ADO.NET (not Entity Framework) for database connectivity, Select2 for dropdown UI, and DataTables for employee listing
+A full-stack web application built with .NET Core (C#) for the backend and HTML/CSS/JavaScript for the frontend. It uses ADO.NET (not Entity Framework) for database connectivity, Select2 for dropdown UI, and DataTables for employee listing.
 
 
 
