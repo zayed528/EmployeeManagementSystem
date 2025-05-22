@@ -6,7 +6,13 @@
   <link rel="stylesheet" href="CSS/normalize.css" />
   <link rel="stylesheet" href="CSS/styles.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
   <title>Update Department</title>
+  <style>
+    .select2-container {
+      font-size: 1.4rem;
+    }
+  </style>
 </head>
 <body>
   <div class="container">
@@ -14,7 +20,7 @@
     <div class="sidebar">
       <button id="menu-toggle"><i class="fas fa-bars"></i></button>
       <a href="index.html"><div class="sidebartext">Main Menu</div></a>
-      <a href="view.html"></a><div class="sidebartext">View All Employees</div>
+      <a href="view.html"><div class="sidebartext">View All Employees</div></a>
       <a href="add.html"><div class="sidebartext">Add Employee</div></a>
       <a href="delete.html"><div class="sidebartext">Delete Employee</div></a>
       <a href="search-firstname.html"><div class="sidebartext">Search by First Name</div></a>
@@ -32,11 +38,17 @@
             <div class="column">
               <input type="text" id="id" placeholder="Employee ID" required />
             </div>
-            <div class="column">
-              <input type="text" id="new-department" placeholder="New Department" required />
-            </div>
           </div>
-          <button type="submit" class="submit">Update Department</button>
+          <div class="row full-width" style="margin-top: 1rem; margin-left: 17rem; padding: 3rem; margin-bottom: 1rem;">
+            <select id="new-department" required>
+              <option value="">Select Department</option>
+              <option value="Engineering">Engineering</option>
+              <option value="Finance">Finance</option>
+              <option value="Sales">Sales</option>  
+              <option value="Marketing">Marketing</option>
+            </select>
+          </div>
+          <button type="submit" class="submit" style="width: 30%; padding: 1.3rem; font-size: 1.3rem; margin-top: 1.5rem;">Update Department</button>
         </form>
       </div>
     </div>
@@ -45,5 +57,15 @@
   <!-- JS -->
   <script type="module" src="JS/main.js"></script>
   <script src="JS/update-department.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      $('#new-department').select2({
+        placeholder: "Select Department",
+        width: '50%'
+      });
+    });
+  </script>
 </body>
 </html>
